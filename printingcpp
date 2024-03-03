@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+int main()
+
+{
+	int num1;
+	int num2;
+	int num_sum;
+
+	cout << "Type the first number:";
+	cin >> num1;
+
+	cout << "Type the second number:";
+	cin >> num2;
+
+	num_sum = num1 + num2;
+	cout << "Sum of the numbers is " << num_sum << endl;
+
+	return 0;
+}
