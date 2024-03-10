@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+    double exchangeRate = 0.727802; // 1 dollar = 0.727 euros
+
+    double dollars;
+    cout << "How much dollars do you want to exchange: ";
+    cin >> dollars;
+
+    //convert dollars to euros
+    double euros = dollars * exchangeRate;
+
+    cout << "Amount in euros: " << euros << endl;
+    return 0;
+    }
