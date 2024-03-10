@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+const double PI = 3.142;
+
+int main()
+{
+    int radius;
+    // prompt user to type radius
+    cout << "Input circle radius:";
+    cin >> radius;
+
+    //calculate area and circumference (A= pi * r^2)
+    double area = PI * radius * radius;
+    cout << "Circle area with the given radius: " << area << endl;
+    return 0;
+}
