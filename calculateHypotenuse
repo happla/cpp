@@ -1,0 +1,15 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+/* pythagora c^2 = a^2 + b^2 */
+int main () {
+	double a, b;
+	cout << "Input first triangle leg: ";
+	cin >> a;
+	cout << "Input second triangle leg: ";
+	cin >> b;
+
+	double hypotenuse = sqrt(a * a  + b * b);
+	cout << "Hypotenuse length: " << hypotenuse << endl;
+	return 0;
+}
