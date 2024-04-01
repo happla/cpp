@@ -1,0 +1,49 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	char calculator;
+	cout << "Choose desired calculation:" << endl
+		<< "1: subtraction" << endl
+		<< "2: addition" << endl
+		<< "3: multiplication" << endl
+		<< "4: division" << endl
+		<< "5: Remainder" << endl
+		<< "Choose a calculation:";
+	cin >> calculator;
+	
+	int num1,num2;
+		cout << "Input first number:";
+		cin >> num1;
+		cout << "Input second number:";
+		cin >> num2;
+	
+	switch(calculator) {
+		case '1': {
+		int subtraction = num1 - num2;
+			cout<< num1 << "-" << num2 << " = " << subtraction << endl;
+			break;
+		} case '2': {
+			int addition = num1 + num2;
+			cout << num1 << "+" << num2 << " = " << addition << endl;
+			break;
+		} case '3': {
+		int multiplication = num1 * num2;
+			cout << num1 << "*" << num2 << " = " << multiplication << endl;
+			break;
+		} case '4': {
+		int division = num1 / num2;
+			cout << num1 << "/" << num2 << " = " << division << endl;
+			break;
+		} case '5': {
+		int remainder = num1 % num2;
+			cout << num1 << "%" << num2 <<  " = " << remainder << endl;
+			break;
+		}
+		default: {
+			cout << "invalid choice";
+		}
+}
+
+	return 0;
+} 
