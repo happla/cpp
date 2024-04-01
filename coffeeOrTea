@@ -1,0 +1,42 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	char choice;
+	cout << "Do you drink coffee or tea? (k/t) ";
+	cin >> choice;
+
+	switch (choice) {
+		case 'c': {
+		int number;
+			cout << "With how many cubes of sugar? ";
+			cin >> number;
+			if (number >= 0 && number <= 2) {
+				cout << "Coffee certainly is invigorating!" << endl;
+			} else if (number > 2) {
+				cout << "Well, coffee can taste pretty intense..." << endl;
+			} else {
+				cout << "An error occurred in the program!" << endl;
+			return 0;
+			}
+		break;					
+			}
+		case 't': {
+			int number;
+			cout << "With how many cubes of sugar? ";
+			cin >> number;
+			if (number >= 0 && number <= 2) {
+				cout << "Tea can have a soothing effect!" << endl;
+			} else if (number > 2) {
+			cout << "Guess you enjoy your tea overly sweet?" << endl;
+			} else {
+			return 0;
+			}
+		break;
+		}
+		default:
+		cout << "An error occurred in the program!" << endl;
+			return 0;
+	}
+	return 0;
+	}
