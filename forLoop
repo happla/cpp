@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int n; //upperlimit
+	cout << "Input an integer: ";
+		cin >> n;
+	
+	for(int number = 1; number<= n; number++){
+		cout << number << endl;
+	}
+return 0;
+}
