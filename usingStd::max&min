@@ -1,0 +1,30 @@
+#include <iostream>
+
+using namespace std;
+
+int largest(int first, int second, int third);
+int smallest(int first, int second, int third);
+
+int main()
+{
+    int number1, number2, number3, largestNumber, smallestNumber;
+    cout << "Input the first integer: ";
+    cin >> number1;
+    cout << "Input the second integer: ";
+    cin >> number2;
+    cout << "Input the third integer: ";
+    cin >> number3;
+    largestNumber = largest(number1, number2, number3);
+    smallestNumber = smallest(number1, number2, number3);
+    cout << "The largest number was " << largestNumber;
+    cout << " and smallest " << smallestNumber << "." << endl;
+}
+
+// Put your code here
+int largest (int first, int second, int third) {
+    return std::max(std::max(first, second), third);
+}
+
+int smallest (int first, int second, int third) {
+    return std::min(std::min(first, second), third);
+}
