@@ -1,13 +1,16 @@
-#include <iostream>
+include <iostream>
+include <iterator>
 using namespace std;
 
 int main() {
     const int MAX_DAYS = 30;
     double hours[MAX_DAYS];
     int numDays;
+    //prompt for opening
+    cout << "The program calculates the total amount of\nwork hours during a given time frame and the average work day length." << endl;
 
     //prompt user for number of days
-    cout << "How many days: ";
+    cout << "How many days:\n";
     cin >> numDays;
 
     if (numDays < 1 || numDays > MAX_DAYS) {
@@ -30,6 +33,9 @@ int main() {
 
     cout << "Total work hours: " << totalHours << endl;
     cout << "Average work day length: " << averageHours << endl;
-
+	
+    cout << "Inputted hours: ";
+    copy(hours, hours + numDays, ostream_iterator<double>(cout, " "));
+    cout << endl;
     return 0;
 }
