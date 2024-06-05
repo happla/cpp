@@ -1,0 +1,35 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    const int MAX_DAYS = 30;
+    double hours[MAX_DAYS];
+    int numDays;
+
+    //prompt user for number of days
+    cout << "How many days: ";
+    cin >> numDays;
+
+    if (numDays < 1 || numDays > MAX_DAYS) {
+        cerr << "Error" << endl;
+        return 1;
+    } 
+    //days array + hours worked in a day
+    for (int i= 0; i< numDays; i++) {
+        cout << "Input hours of workday " << i + 1 << ": ";
+        cin >> hours[i];
+    }
+
+    //calculate total hours
+    double totalHours = 0;
+    for (int i = 0; i < numDays; i++) {
+        totalHours += hours[i];
+    }
+ //calculate average hours
+    double averageHours = totalHours / numDays;
+
+    cout << "Total work hours: " << totalHours << endl;
+    cout << "Average work day length: " << averageHours << endl;
+
+    return 0;
+}
