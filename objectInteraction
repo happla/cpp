@@ -1,0 +1,22 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+// Put your code here
+class AskAndPrint 
+{
+   public:
+   string thing;
+void DoYourThing(const char* prompt) 
+{
+   cout << prompt << endl;
+   getline(cin, thing);
+   cout << thing << endl;
+}
+};
+int main (void)
+{   
+   char charstring[] = "Write the text for printing: ";
+   AskAndPrint thing;
+   thing.DoYourThing(charstring);
+}
